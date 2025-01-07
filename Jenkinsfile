@@ -1,5 +1,5 @@
 pipeline {
-    agent principal
+    agent { label 'master' }
     
     environment {
         DOCKER_IMAGE = 'flask-app'
