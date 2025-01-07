@@ -46,17 +46,17 @@ pipepipeline {
             }
         }
         
-      #  stage('Push to Repository') {
-      #      steps {
-      #          script {
-      #              // Etiquetar y subir la imagen al repositorio
-      #              sh """
-      #                  docker tag ${DOCKER_IMAGE}:${DOCKER_TAG} ${DOCKER_REPO}/${DOCKER_IMAGE}:${DOCKER_TAG}
-      #                  docker push ${DOCKER_REPO}/${DOCKER_IMAGE}:${DOCKER_TAG}
-      #              """
-      #          }
-      #      }
-     #   } # Fin Stage
+      //  stage('Push to Repository') {
+      //     steps {
+      //         script {
+      //             // Etiquetar y subir la imagen al repositorio
+      //             sh """
+      //                 docker tag ${DOCKER_IMAGE}:${DOCKER_TAG} ${DOCKER_REPO}/${DOCKER_IMAGE}:${DOCKER_TAG}
+      //                 docker push ${DOCKER_REPO}/${DOCKER_IMAGE}:${DOCKER_TAG}
+      //             """
+      //         }
+      //     }
+     //   } # Fin Stage
     }
     
     post {
